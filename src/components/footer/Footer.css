@@ -1,0 +1,18 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(0,0,0,1);
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    color: gray;
+    padding: 30px;
+
+}
+

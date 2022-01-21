@@ -1,0 +1,78 @@
+.card-list {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-link {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    min-height: 240px;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-shadow: -1rem 0 3rem #000;
+    border-radius: 16px !important;
+    transition: .2s;
+    background-color: var(--card-color) !important;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card-header {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent !important;
+    width: 90%;
+}
+
+.card:hover .card-header {
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(134, 255, 97), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .card:hover~.card {
+        transform: translateX(80px);
+    }
+    
+    .card:not(:first-child) {
+        margin-left: -80px;
+    }
+   
+
+}
+

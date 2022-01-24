@@ -34,10 +34,10 @@ const Contact = () => {
                     <div className="contact-right">
                         <textarea className="form-control form-subject" name="message" placeholder="Your message" />
                     </div>
-                    <div className="contact-button">
-                        <input type="submit" className="btn btn-info" value="Send" />
-                    </div>
                 </form>
+                <div className="contact-button">
+                    <input type="submit" className="btn btn-info" value="Send" />
+                </div>
             </div>
         </div>
     )

@@ -1383,7 +1383,6 @@
     padding: 20px;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
 
   .card-container {
@@ -1393,12 +1392,12 @@
 
   .summary {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
     text-align: left;
     letter-spacing: 0px;
-    width: 100%;
+    width: 90%;
     height: 100%;
     line-height: 2.5rem;
     padding-right: 25px;

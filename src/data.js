@@ -2,39 +2,39 @@
 export const projects = [
     {
         id: 1,
-        source: require('./assets/crypto.gif'), 
+        source: require('./assets/crypto.mp4'), 
         title: "Cryptocurrency Viewer",
-        description: "-"
+        description: "View live changes on crypto."
     },
     {
         id: 2,
-        source: require('./assets/wildfire.gif'), 
+        source: require('./assets/wildfire.mp4'), 
         title: "Wildfire Tracker",
-        description: "-"
+        description: "View wildfire events reported by NASA."
     },
     {
         id: 3,
-        source: require('./assets/breakingbad.gif'), 
+        source: require('./assets/breaking-bad.mp4'), 
         title: "Breaking-Bad Cast Viewer",
-        description: "-"
+        description: "View all your favorite cast members from Breaking Bad."
     },
     {
         id: 4,
-        source: require('./assets/ifixerroc.gif'), 
+        source: require('./assets/ifixerroc.mp4'), 
         title: "iFixerROC",
-        description: "-"
+        description: "Device repair service for iFixerROC, view offered solutions and make appointments."
     },
     {
         id: 5,
-        source: require('./assets/todo.gif'), 
+        source: require('./assets/todo.mp4'), 
         title: "Task Tracker",
-        description: "-"
+        description: "Store all your tasks, update them or cross them out when it's time."
     },
     {
         id: 6,
-        source: require('./assets/weather.gif'), 
+        source: require('./assets/weather.mp4'), 
         title: "Weather Viewer",
-        description: "-"
+        description: "View live weather data for your location."
     },
 ];
 

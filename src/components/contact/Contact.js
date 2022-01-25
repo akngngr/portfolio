@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import emailjs from 'emailjs-com'
+import ContactMap from './ContactMap'
 
 
 const Contact = () => {
@@ -18,14 +19,13 @@ const Contact = () => {
     }
     return (
         <div className="contact-container" id="contact">
-            <div className="contact-map-container">
-                <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d868357.4885204659!2d-71.94389404826255!3d42.620678207285984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1641356408827!5m2!1sen!2sus"
-                    loading="lazy"
-                    className="contact-map"
-                />
-
-            </div>
+            <ContactMap />
+            
             <div className="contact-form-container">
+            <div className="contact-map-card">
+                <h1>I'm located in Nashua, NH</h1>
+                <h2>Open to Remote Work in US and Hybrid positions in New Hampshire & Massachusetts.</h2>
+            </div>
                 <form onSubmit={sendEmail} className="contact-form">
                     <div className="contact-left">
                         <input type="text" className="form-control" name="name" placeholder="Name" />

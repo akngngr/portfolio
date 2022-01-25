@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Card from '../card/Card'
 import Avatar from '../../assets/avatar.png'
-import Typewriter from 'typewriter-effect'
+// import Typewriter from 'typewriter-effect'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import ContactButton from '../contact/ContactButton'
+import Skills from './Skills'
 
 const containerVariants = {
   hidden: {
@@ -48,18 +48,18 @@ const avatarVariants = {
     },
   },
 }
-const typewriterVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 1.5,
-      duration: 1,
-    },
-  },
-}
+// const typewriterVariants = {
+//   hidden: {
+//     opacity: 0,
+//   },
+//   visible: {
+//     opacity: 1,
+//     transition: {
+//       delay: 1.5,
+//       duration: 1,
+//     },
+//   },
+// }
 const homeVariants = {
   hidden: {
     x: '-100vw',
@@ -72,30 +72,6 @@ const homeVariants = {
       type: 'spring',
       mass: 2,
       damping: 25,
-    },
-  },
-}
-const midVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.75,
-      duration: 2,
-    },
-  },
-}
-const midSectionVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.75,
-      duration: 2,
     },
   },
 }
@@ -116,11 +92,9 @@ const caretDown = {
   },
 }
 
-
 const Home = () => {
   return (
     <div className="container">
-      
       <motion.div
         className="home-container"
         variants={containerVariants}
@@ -134,9 +108,8 @@ const Home = () => {
           initial="hidden"
           animate="visible"
         >
-           
           <div className="avatar">
-          <div className="bio">
+            <div className="bio">
               <h2>Bio.</h2>
               <p>Lorem ipsum dolor sit amet 🌄</p>
               <p>Lorem ipsum dolor sit amet 🚗</p>
@@ -152,7 +125,7 @@ const Home = () => {
                 className="avatar-img"
               />
             </div>
-            
+
             {/* <motion.div
               className="typewriter"
               variants={typewriterVariants}
@@ -192,7 +165,7 @@ const Home = () => {
               />
             </motion.div> */}
           </div>
-          
+
           <motion.div
             className="home-text"
             variants={homeVariants}
@@ -200,60 +173,40 @@ const Home = () => {
             animate="visible"
           >
             <h2>HI THERE, I'M</h2>
-            <h1><span className="name">AKIN</span> GUNGOR</h1>
-            <p>Front-End Web Developer passionate about creating interactive applications and experiences on the web.</p>
-            <a href="https://github.com/akngngr/akngngr.github.io/blob/main/resume/resume.pdf" className="btn btn-resume" target="_blank">Resume</a>
-          </motion.div>
-          
-        </motion.div>
-        <motion.div
-            variants={caretDown}
-            initial="hidden"
-            animate="visible"
-            className="caret"
-          >
+            <h1>
+              <span className="name">AKIN</span> GUNGOR
+            </h1>
+            <p>
+              Front-End Web Developer passionate about creating interactive
+              applications and experiences on the web.
+            </p>
             <a
-              href="#mid-section"
-              style={{ textDecoration: 'none', color: 'white' }}
+              href="https://github.com/akngngr/akngngr.github.io/blob/main/resume/resume.pdf"
+              className="btn btn-resume"
+              target="_blank"
             >
-              <FontAwesomeIcon
-                icon={faCaretDown}
-                className="caret-down"
-                style={{ width: '60px', height: '60px' }}
-              />
+              Resume
             </a>
           </motion.div>
-        <motion.section
-          className="mid-section"
-          id="mid-section"
-          variants={midSectionVariants}
+        </motion.div>
+        <motion.div
+          variants={caretDown}
           initial="hidden"
           animate="visible"
+          className="caret"
         >
-          <motion.div
-            className="summary"
-            variants={midVariants}
-            initial="hidden"
-            animate="visible"
+          <a
+            href="#mid-section"
+            style={{ textDecoration: 'none', color: 'white' }}
           >
-            <div className="summary-text">
-              <motion.h2>
-                Designing and building eye catching Web applications and
-                reusable components to bring ideas into reality is one of my
-                great skills.
-              </motion.h2>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="card-container"
-            variants={midVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <Card />
-          </motion.div>
-        </motion.section>
+            <FontAwesomeIcon
+              icon={faCaretDown}
+              className="caret-down"
+              style={{ width: '60px', height: '60px' }}
+            />
+          </a>
+        </motion.div>
+        <Skills />
       </motion.div>
     </div>
   )

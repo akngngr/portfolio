@@ -30,17 +30,26 @@ body{
   body::-webkit-scrollbar {
     width: 0.25rem;
   }
+  body::-moz-scrollbar {
+    width: 0.25rem;
+  }
   body::-webkit-scrollbar-track {
     background: #1e241f;
   }
+  body::-moz-scrollbar-track {
+    background: #1e241f;
+  }
   body::-webkit-scrollbar-thumb {
+    background: #006b2d;
+  }
+  body::-moz-scrollbar-thumb {
     background: #006b2d;
   }
 
 .main-bg {
   background-color: black;
   position: absolute;
-  z-index: 10;
+  z-index: 30;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -63,7 +72,7 @@ body{
   height: 100vh;
   justify-content: center;
   align-items: center;
-  z-index: 20;
+  z-index: 40;
 
 }
 

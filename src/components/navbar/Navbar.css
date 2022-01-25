@@ -28,7 +28,7 @@
     text-align: center;
     justify-content: center;
     transition: all 0.2s;
-    z-index: 200;
+    z-index: 10;
 
 }
 
@@ -154,7 +154,7 @@
 @media (min-width: 800px) {
     .navbar {
         flex-direction: column;
-        z-index: 20;
+        z-index: 10;
      }
      
      .navbar-container {
@@ -169,7 +169,6 @@
         height: 100%;
         width: 5rem;
         font-family: 'Monoton', cursive, 'sans-serif';
-        z-index: 20;
 
     }
 

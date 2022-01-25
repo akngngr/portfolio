@@ -18,7 +18,6 @@ const introVariants = {
 }
 
 
-//  LEFT OFF HERE
 const letterFollow = (e) => {
     const imgElem = document.querySelector('img')
 

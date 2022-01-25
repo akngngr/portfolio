@@ -7,7 +7,7 @@
 :root {
   --text-bg: rgb(31, 31, 31);
   --text: rgb(202, 202, 202);
-  --bg-contact: rgb(0, 62, 177);
+  --bg-contact: rgba(17, 17, 17, 0.5);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
   --card-color: rgb(251, 255, 0);
@@ -43,6 +43,7 @@
     align-items: center;
     padding: 15px;
     gap: 15px;
+    position: relative;
   }
 
   .contact-map-container {
@@ -54,10 +55,10 @@
     align-items: center;
   }
   .contact-map {
+    display: flex;
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 15px;
   }
   .contact-form-container {
     display: flex;
@@ -77,9 +78,10 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(13, 17, 13);
+    background: transparent;
     border-radius: 15px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    
   }
 
   .contact-left {
@@ -92,18 +94,18 @@
   }
   .contact-right {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 50%;
     justify-content: center;
     align-items: center;
   }
 
   .form-control {
-    height: 20%;
-    width: 80%;
+    height: 20px;
+    width: 50%;
     border: none;
-    padding: 5%;
-    background-color: rgb(13, 17, 13);
+    padding: 20px;
+    background: transparent;
     border-bottom: 1px solid rgb(255, 255, 255);
     color: var(--text);
     font-size: 1rem;
@@ -141,7 +143,8 @@
   }
 
   .form-subject {
-    height: 100%;
+    width: 100%;
+    height: 80%;
     resize: vertical;
   }
 
@@ -208,6 +211,34 @@
     filter: grayscale(0);
 
   }
+  .contact-details {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
+  .contact-map-icon{
+    position: absolute;
+    font-size: 14rem;
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    border: 2px solid green;
+    border-radius: 50%;
+  }
+
+  .contact-map-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+    color: grey;
+    font-size: 1rem;
+  }
 
 }
 
@@ -223,32 +254,28 @@
   .contact-map-container {
     display: flex;
     flex-direction: column;
-    width: 98%;
-    height: 400px;
+    width: 96%;
+    height: 500px;
     justify-content: center;
     align-items: center;
     align-self: center;
-    padding: 10px 0;
   }
   .contact-map {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 20px;
-    border: 1px solid black;
-
   }
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 20px;
     width: 98%;
     height: 100%;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(23, 23, 23, 1);
+    background: transparent;
     padding: 20px 0;
     border-radius: 20px;
     margin-bottom: 50px;
@@ -257,15 +284,15 @@
   .contact-left {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height: 100%;
     padding: 10px;
   }
   .contact-right {
-    width: 300px;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
   }
 
@@ -274,15 +301,15 @@
     width: 100%;
     border: none;
     padding: 10px 0;
-    background-color: rgba(23, 23, 23, 1);;
+    background: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: var(--text);
     font-size: 1rem;
   }
   .contact-button {
     display: flex;
-    margin-bottom: 20%;
-
+    margin-bottom: 50px;
+    justify-content: center;
   }
 
   .btn {
@@ -312,10 +339,10 @@
   }
 
   .form-subject {
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: 80%;
     resize: vertical;
-    margin-top: 10%;
+    margin-top: 20px;
   }
 
   .contact-button-container{
@@ -370,6 +397,7 @@
     border-radius: 15px;
     transition: all 0.2s;
     filter: grayscale(100%);
+    
   }
 
   .contact-icon:hover {
@@ -377,5 +405,37 @@
     box-shadow: 0 5px 5px 0 rgba(255, 255, 255, 0.15);
     filter: grayscale(0);
 
+  }
+
+  .contact-details {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+  }
+  .contact-map-icon{
+    position: absolute;
+    font-size: 14rem;
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    border: 2px solid green;
+    border-radius: 50%;
+  }
+
+  .contact-map-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 50%;
+    border-radius: 15px;
+    color: grey;
+    font-size: 0.8rem;
+    margin-top: 50px;
   }
 }

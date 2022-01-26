@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-@font-face {
-  font-family: 'btx-benafor';
-  src: url(../../fonts/BTX-Benafor-Regular.ttf);
-}
 
 * {
   margin: 0;
@@ -15,13 +9,14 @@
 }
 
 :root {
+  --name-font: 'Persian', serif;
   --typewriter: rgb(189, 189, 189);
   --text-c: rgb(218, 218, 218);
   --text: rgb(202, 202, 202);
   --bg-home: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
-  --card-color: rgb(251, 255, 0);
+  --card-color: rgb(255, 241, 52);
   --green: rgb(0, 128, 0);
   --shadow: rgba(31, 31, 31, 0.5);
   --header: rgba(47, 131, 22, 0.5);
@@ -95,16 +90,17 @@
   text-align: center;
   text-decoration: none;
   background: var(--btn-resume);
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
   border-radius: 15px;
-  text-decoration: none;
-  list-style: none;
+  bottom: none;
 }
 .btn-resume:hover {
   letter-spacing: 1px;
   transform: scale(1.1);
 }
-
+.bio {
+  background: radial-gradient(circle at 20% 20%,rgba(0, 128, 0, 0.3), rgba(0, 0, 0, 0.2));
+}
 @media (min-width: 1700px) {
   .home-container {
     display: flex;
@@ -168,7 +164,7 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
+    background: radial-gradient(circle at 20% 20%,rgba(0, 128, 0, 0.3), rgba(0, 0, 0, 0.2));
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(400px);
@@ -202,6 +198,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 5% 0 5% 5%;
+
   }
 
   .home-text h2 {
@@ -215,17 +212,17 @@
 
   .home-text h1 {
     color: white;
-    font-size: 4rem;
-    line-height: 8rem;
+    font-size: 3.5rem;
+    line-height: 9rem;
     text-align: left;
     letter-spacing: 8px;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -242,7 +239,6 @@
     transition: all 0.2s;
     background: var(--btn-resume);
     padding: 20px;
-    
   }
   
 
@@ -335,7 +331,6 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
@@ -383,18 +378,18 @@
 
   .home-text h1 {
     color: white;
-    font-size: 4rem;
-    line-height: 7rem;
+    font-size: 3.2rem;
+    line-height: 8rem;
     text-align: left;
     letter-spacing: 7px;
     clip-path: text;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -513,7 +508,6 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
@@ -561,17 +555,17 @@
 
   .home-text h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 7rem;
     text-align: left;
     letter-spacing: 6px;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -699,7 +693,6 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
@@ -745,18 +738,18 @@
 
   .home-text h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 6rem;
     text-align: left;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     clip-path: text;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -883,7 +876,6 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
@@ -929,18 +921,18 @@
 
   .home-text h1 {
     color: white;
-    font-size: 2.5rem;
-    line-height: 5rem;
+    font-size: 2.1rem;
+    line-height: 6rem;
     text-align: left;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
     clip-path: text;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -1067,7 +1059,6 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 30px 0 0 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     transition: all 0.5s ease-in;
     transform: translateX(100%);
@@ -1114,18 +1105,18 @@
 
   .home-text h1 {
     color: white;
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-size: 1.8rem;
+    line-height: 5rem;
     text-align: left;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     clip-path: text;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {
@@ -1258,7 +1249,6 @@
     height: 80%;
     border: 1px solid black;
     border-radius: 0 0 30px 30px;
-    background: rgba(255, 255, 255, 0.2);
     padding: 5px;
     transition: all 0.5s ease-in-out;
     transform: translateY(-100%);
@@ -1331,18 +1321,18 @@
 
   .home-text h1 {
     color: white;
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 5rem;
     text-align: left;
     letter-spacing: 4px;
     clip-path: text;
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
     font-weight: 100;
   }
 
   .name {
     color: rgba(255, 255, 255, 0.404);
-    font-family: 'btx-benafor', serif;
+    font-family: var(--name-font);
   }
 
   .home-text p {

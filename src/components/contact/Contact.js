@@ -23,8 +23,8 @@ const Contact = () => {
             
             <div className="contact-form-container">
             <div className="contact-map-card">
-                <h1>I'm located in Nashua, NH</h1>
-                <h2>Open to Remote Work in US and Hybrid positions in New Hampshire & Massachusetts.</h2>
+                <h1>I'm located in Nashua, NH.</h1>
+                <h2>Available for Hybrid positions in New Hampshire & Massachusetts and Remote work in the US.</h2>
             </div>
                 <form onSubmit={sendEmail} className="contact-form">
                     <div className="contact-left">
@@ -36,7 +36,7 @@ const Contact = () => {
                     </div>
                 </form>
                 <div className="contact-button">
-                    <input type="submit" className="btn btn-info" value="Send" />
+                    <input type="submit" className="btn btn-resume" value="Send" />
                 </div>
             </div>
         </div>

@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trochut:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'btx-benafor';
+  src: url(./fonts/BTX-Benafor-Regular.ttf);
+}
+@font-face {
+  font-family: 'garges';
+  src: url(./fonts/Garges.ttf);
+}
+@font-face {
+  font-family: 'against';
+  src: url(./fonts/against.ttf);
+}
+@font-face {
+  font-family: 'Moorhen';
+  src: url(./fonts/Moorhen.ttf);
+}
+@font-face {
+  font-family: 'Sinerva';
+  src: url(./fonts/Sinerva.ttf);
+}
+@font-face {
+  font-family: 'Alternative';
+  src: url(./fonts/Alternative.ttf);
+}
+
+@font-face {
+  font-family: 'Zhafir';
+  src: url(./fonts/Zhafir.ttf);
+}
+
+@font-face {
+    font-family: 'Cafe-Nero';
+    src: url(./fonts/Cafe-Nero.ttf);
+  }
+@font-face {
+    font-family: 'Persian';
+    src: url(./fonts/Persian.ttf);
+  }
+@font-face {
+    font-family: 'Debock';
+    src: url(./fonts/Debock.otf);
+  }
+@font-face {
+    font-family: 'KronaOne';
+    src: url(./fonts/KronaOne.ttf);
+  }
+@font-face {
+    font-family: 'CinzelDecorative';
+    src: url(./fonts/CinzelDecorative.ttf);
+  }
+@font-face {
+    font-family: 'Znikomit';
+    src: url(./fonts/Znikomit.otf);
+  }
+
 * {
   margin: 0;
   padding: 0;

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-
+import '../../App.css'
 import letter from '../../assets/letterG.png'
 
 const introVariants = {

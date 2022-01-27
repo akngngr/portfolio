@@ -1,5 +1,6 @@
 import mainBg from '../../assets/mainBg.mp4'
 import { motion } from 'framer-motion'
+import '../../App.css'
 
 const videoVariants = {
     visible: {
@@ -28,7 +29,7 @@ const Start = () => {
                     initial="visible"
                     animate="dim"
                 >
-                <video className="main-video" autoplay="true" loop="true" muted="true">
+                <video className="main-video" autoplay="true" loop="true">
                     <source src={mainBg} type="video/mp4" />
                 </video>
                 </motion.div>

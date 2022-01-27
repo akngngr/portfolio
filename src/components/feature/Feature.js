@@ -15,7 +15,7 @@ const Feature = () => {
                 onMouseOver={(e) => e.target.play()} 
                 onMouseOut={(e) => e.target.pause()}
                 loop="true" 
-                muted="true" 
+                 
               >
                   <source 
                     src={item.source.default} 

@@ -1,5 +1,4 @@
 import React from 'react'
-import ContactButton from '../contact/ContactButton'
 import './Footer.css'
 
 const Footer = () => {

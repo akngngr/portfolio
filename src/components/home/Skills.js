@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Card from '../card/Card'
 import { motion } from 'framer-motion'
 import './Home.css'
